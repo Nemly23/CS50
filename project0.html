@@ -3,28 +3,29 @@
     <head>
         <title>My Projects</title>
         <style>
+            html{
+              height: 100%;
+            }
+            body {
+              margin:0;
+              padding:0;
+              min-height: 100%;
+              height: 100%;
+            }
+
+            #page-container {
+              position: relative;
+              min-height: 100%;
+              overflow: auto;
+              border: 5px solid black;
+            }
+
             #top {
               background-color: #3366ff;
               text-align: center;
               padding: 20px;
               font-family: sans-serif;
               font-size: 50px;
-            }
-
-            .top_button {
-              background-color: #00004d;
-              text-align: center;
-              width: 25%;
-              height: 40px;
-              font-family: sans-serif;
-              font-size: 20px;
-              color: white;
-              border-color: #000080;
-              transition-duration: 0.1s;
-            }
-
-            .top_button:hover {
-              background-color: #3333ff;
             }
 
             #lists {
@@ -45,8 +46,36 @@
               border-top: 10px solid white;
               border-left: 20px solid white;
               border-right: 20px solid white;
+              border-bottom: 70px solid white;
               padding-left: 50px;
               box-sizing: border-box;
+            }
+
+            #footer {
+              clear: both;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              height: 50px;
+              width: 100%;
+              text-align: center;
+              background-color: lightblue;
+            }
+
+            .top_button {
+              background-color: #00004d;
+              text-align: center;
+              width: 25%;
+              height: 40px;
+              font-family: sans-serif;
+              font-size: 20px;
+              color: white;
+              border-color: #000080;
+              transition-duration: 0.1s;
+            }
+
+            .top_button:hover {
+              background-color: #3333ff;
             }
 
             h3 {
@@ -56,43 +85,57 @@
         </style>
     </head>
     <body>
-        <div id="top">
-            Projects Display
-        </div>
-        <button class="top_button">
-            Home
-        </button><!--
-        --><button class="top_button">
-            Images
-        </button><!--
-        --><button class="top_button">
-            Reports
-        </button><!--
-        --><button class="top_button">
-            Videos
-        </button>
-        <div id = "center">
-            <div id="lists">
-                <ol>
-                    <li>Resume</li>
-                    <li>Introdution</li>
-                    <li>Objectives</li>
-                    <li>Results</li>
-                    <li>References</li>
-                </ol>
-            </div>
-            <div id="text">
-                <h3>Title</h3>
-                <h4>Resume</h4>
-                <p> This is a test of text </p>
-                <h4>Introduction</h4>
-                <p> This is a test of text </p>
-                <h4>Objectives</h4>
-                <p> This is a test of text </p>
-                <h4>Results</h4>
-                <p> This is a test of text </p>
-                <h4>Reference</h4>
-            </div>
+        <div id="page-container">
+          <div id="top">
+              Projects Display
+          </div>
+          <button class="top_button">
+              Home
+          </button><!--
+          --><button class="top_button">
+              Images
+          </button><!--
+          --><button class="top_button">
+              Reports
+          </button><!--
+          --><button class="top_button">
+              Videos
+          </button>
+          <div id="lists">
+              <ol>
+                  <li>Resume</li>
+                  <li>Introdution</li>
+                  <li>Objectives</li>
+                  <li>Results</li>
+                  <li>References</li>
+              </ol>
+          </div>
+          <div id="text">
+              <h3>Title</h3>
+              <h4>Resume</h4>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <h4>Introduction</h4>
+              <p> This is a test of text </p>
+              <h4>Objectives</h4>
+              <p> This is a test of text </p>
+              <h4>Results</h4>
+              <p> This is a test of text </p>
+              <h4>Reference</h4>
+          </div>
+          <div id="footer">
+              Test
+          </div>
         </div>
     </body>
 </html>

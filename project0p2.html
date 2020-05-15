@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Projects</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <style>
+            html{
+              height: 100%;
+            }
+            body {
+              margin:0;
+              padding:0;
+              min-height: 100%;
+              height: 100%;
+            }
+
+            #page-container {
+              min-height: 100%;
+            }
+
+            header {
+              background-color: #3366ff;
+              text-align: center;
+              padding: 20px;
+              font-family: sans-serif;
+              font-size: 50px;
+            }
+
+            summary {
+              float:left;
+              position: sticky;
+              top: 0;
+              background-color: #D3D3D3;
+              width: 15%;
+              font-family: sans-serif;
+              font-size: 15px;
+              border-top: 10px solid white;
+              box-sizing: border-box;
+            }
+
+            article {
+              float:left;
+              background-color: #F1F1F1;
+              min-height: 565px;
+              font-family: sans-serif;
+              border-top: 10px solid white;
+              border-left: 20px solid white;
+              border-right: 20px solid white;
+              border-bottom: 20px solid white;
+              padding-left: 50px;
+              box-sizing: border-box;
+            }
+
+
+            @media (min-width: 800px) {
+              article {
+                width: 85%;
+              }
+            }
+            @media (max-width: 799px) {
+               summary {
+                 display: none;
+               }
+               article {
+                 width: 100%;
+               }
+            }
+
+            footer {
+              clear: both;
+              height: 50px;
+              width: 100%;
+              text-align: center;
+              background-color: lightblue;
+            }
+
+            a {
+              color: black;
+            }
+
+
+
+            .nav-link{
+              font-size: 20px;
+              color: white;
+              border: 2px solid #000080;
+              transition-duration: 0.1s;
+              background-color: #00004d;
+            }
+
+            .nav-link:hover{
+              background-color: #3333ff;
+              color: white;
+            }
+
+            h3 {
+              text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="page-container">
+          <header>
+              Projects Display
+          </header>
+          <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Images</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Videos</a>
+            </li>
+          </ul>
+          <summary>
+              <ol>
+                  <li><a href="#title">Title</a></li>
+                  <li><a href="#resume">Resume</a></li>
+                  <li><a href="#introduction">Introdution</a></li>
+                  <li><a href="#objectives">Objectives</a></li>
+                  <li><a href="#results">Results</a></li>
+                  <li><a href="#references">References</a></li>
+              </ol>
+          </summary>
+          <article>
+              <h3 id="title">Title</h3>
+              <h4 id="resume">Resume</h4>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <h4 id="introduction">Introduction</h4>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <h4 id="objectives">Objectives</h4>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <h4 id="results">Results</h4>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <h4 id="references">Reference</h4>
+          </article>
+          <footer>
+              Test
+          </footer>
+        </div>
+    </body>
+</html>

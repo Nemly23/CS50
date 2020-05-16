@@ -23,16 +23,13 @@
             }
 
             summary {
-              float:left;
               background-color: #D3D3D3;
               font-family: sans-serif;
               font-size: 15px;
               border-top: 10px solid white;
-              box-sizing: border-box;
             }
 
             article {
-              float:left;
               background-color: #F1F1F1;
               min-height: 565px;
               font-family: sans-serif;
@@ -40,8 +37,6 @@
               border-left: 20px solid white;
               border-right: 20px solid white;
               border-bottom: 20px solid white;
-              padding-left: 50px;
-              box-sizing: border-box;
             }
 
             footer {
@@ -94,8 +89,8 @@
               <a class="nav-link" href="#">Videos</a>
             </li>
           </ul>
-          <div class="container-fluid">
-          <summary class="col-2 sticky-top d-none d-lg-block">
+          <div class="row">
+          <summary class="align-self-start col-2 sticky-top d-none d-lg-block p-2">
               <ol>
                   <li><a href="#title">Title</a></li>
                   <li><a href="#resume">Resume</a></li>
@@ -105,7 +100,7 @@
                   <li><a href="#references">References</a></li>
               </ol>
           </summary>
-          <article class="col-lg-10 col-xs-12">
+          <article class="col-lg-10 col-xs-12 p-4 pl-5">
               <h3 id="title">Title</h3>
               <h4 id="resume">Resume</h4>
               <p> This is a test of text </p>

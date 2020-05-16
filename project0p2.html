@@ -14,10 +14,6 @@
               height: 100%;
             }
 
-            #page-container {
-              min-height: 100%;
-            }
-
             header {
               background-color: #3366ff;
               text-align: center;
@@ -28,10 +24,7 @@
 
             summary {
               float:left;
-              position: sticky;
-              top: 0;
               background-color: #D3D3D3;
-              width: 15%;
               font-family: sans-serif;
               font-size: 15px;
               border-top: 10px solid white;
@@ -51,21 +44,6 @@
               box-sizing: border-box;
             }
 
-
-            @media (min-width: 800px) {
-              article {
-                width: 85%;
-              }
-            }
-            @media (max-width: 799px) {
-               summary {
-                 display: none;
-               }
-               article {
-                 width: 100%;
-               }
-            }
-
             footer {
               clear: both;
               height: 50px;
@@ -77,8 +55,6 @@
             a {
               color: black;
             }
-
-
 
             .nav-link{
               font-size: 20px;
@@ -100,7 +76,7 @@
         </style>
     </head>
     <body>
-        <div id="page-container">
+        <div class="container-fluid">
           <header>
               Projects Display
           </header>
@@ -118,7 +94,8 @@
               <a class="nav-link" href="#">Videos</a>
             </li>
           </ul>
-          <summary>
+          <div class="container-fluid">
+          <summary class="col-2 sticky-top d-none d-lg-block">
               <ol>
                   <li><a href="#title">Title</a></li>
                   <li><a href="#resume">Resume</a></li>
@@ -128,7 +105,7 @@
                   <li><a href="#references">References</a></li>
               </ol>
           </summary>
-          <article>
+          <article class="col-lg-10 col-xs-12">
               <h3 id="title">Title</h3>
               <h4 id="resume">Resume</h4>
               <p> This is a test of text </p>
@@ -161,6 +138,7 @@
               <p> This is a test of text </p>
               <h4 id="references">Reference</h4>
           </article>
+        </div>
           <footer>
               Test
           </footer>

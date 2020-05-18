@@ -26,6 +26,8 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: auto 100%;
+            padding-right: 15px;
+            padding-left: 15px;
           }
 
           .row {
@@ -56,8 +58,10 @@
     </head>
     <body>
       <div class="container-fluid">
-        <header class="container-fluid" height="250px">
-          <img src="Name.jpg" class="rounded mx-auto d-block" height="100px">
+        <header class="container-fluid">
+            <div class="row justify-content-md-center">
+              <img src="Name.jpg" class="col-lg-6 col-sm-9 col-xs-12  rounded mx-auto d-block">
+            </div>
         </header>
         <nav class="navbar navbar-custom navbar-expand-md">
           <a class="navbar-brand" href="#">
@@ -82,7 +86,7 @@
               </li>
             </ul>
           </div>
-          <form class="form-inline my-2 my-lg-0">
+          <form class="form-inline my-2 my-lg-0 d-none d-sm-block">
            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
            <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
          </form>

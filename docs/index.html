@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Projects</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <style>
+          .navbar-custom {
+            background-color: #BC5005;
+          }
+          /* Modify brand and text color */
+
+          .navbar-custom .navbar-brand,
+          .navbar-custom .navbar-text {
+              color: white;
+              font-size: 20px;
+          }
+
+          .navbar-custom .navbar-text:hover {
+              color: grey;
+          }
+          header {
+            background-image: url("Banner.jpg");
+            background-color: #cccccc;
+            height: 100px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+          }
+
+          .row {
+            padding-right: 15px;
+            padding-left: 15px;
+          }
+
+          footer {
+            height: 100px;
+            text-align: center;
+            background-color: #ffa64d;
+          }
+
+          .navbar-header .navbar-toggler {
+            border: 0;
+          }
+          .navbar-toggler-icon {
+            color: #fff;
+          }
+          .navbar-toggler-icon:hover {
+            background: #ff0000;
+          }
+
+          .navbar-toggler-icon {
+                  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+              }
+        </style>
+    </head>
+    <body>
+      <div class="container-fluid">
+        <header class="container-fluid" height="250px">
+          <img src="Name.jpg" class="rounded mx-auto d-block" height="100px">
+        </header>
+        <nav class="navbar navbar-custom navbar-expand-md">
+          <a class="navbar-brand" href="#">
+            <img src="Logo.jpg" width="30" height="30" alt="" loading="lazy">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbar-custom" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link navbar-text" href="#">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text" href="#">Imagess</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text" href="#">Reports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text" href="#">Videos</a>
+              </li>
+            </ul>
+          </div>
+          <form class="form-inline my-2 my-lg-0">
+           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+           <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+         </form>
+        </nav>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 card">
+            <img src="Potes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Potes</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 card">
+            <img src="Potes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Potes</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 card">
+            <img src="Potes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Potes</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 card">
+            <img src="Potes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Potes</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="d-flex align-items-center row pt-2 mt-5">
+          <div class="col-3">
+            <img src="Logo.jpg" class="rounded" width="50" height="50" alt="" loading="lazy">
+          </div>
+          <div class="col-3">
+            Test
+          </div>
+          <div class="col-3">
+            Outro
+          </div>
+          <div class="col-3">
+            Mais um
+          </div>
+      </footer>
+    </div>
+    </body>
+</html>

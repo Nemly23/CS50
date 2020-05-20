@@ -28,6 +28,21 @@
             background-size: auto 100%;
           }
 
+          summary {
+            font-family: sans-serif;
+            font-size: 15px;
+            border-top: 10px solid white;
+          }
+
+          article {
+            background-color: #F1F1F1;
+            min-height: 565px;
+            font-family: sans-serif;
+            border-top: 10px solid white;
+            border-left: 20px solid white;
+            border-right: 20px solid white;
+          }
+
           .row {
             padding-right: 15px;
             padding-left: 15px;
@@ -71,13 +86,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link navbar-text active" href="projectImage.html">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link navbar-text" href="projectImage.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navbar-text" href="#">Images</a>
+                <a class="nav-link navbar-text" href="#">Imagess</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navbar-text" href="projectImagep2.html">Reports</a>
+                <a class="nav-link navbar-text active" href="projectImagep2.html">Reports<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link navbar-text" href="#">Videos</a>
@@ -90,39 +105,62 @@
           </div>
         </nav>
         <div class="row">
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 card">
-            <img src="Potes.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Potes</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+          <summary class="align-self-start col-lg-2 col-xs-6 sticky-top p-2" id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Summary
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse d-lg-block" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <ol>
+                    <li><a href="#title">Title</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#introduction">Introdution</a></li>
+                    <li><a href="#objectives">Objectives</a></li>
+                    <li><a href="#results">Results</a></li>
+                    <li><a href="#references">References</a></li>
+                  </ol>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 card">
-            <img src="Potes.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Potes</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 card">
-            <img src="Potes.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Potes</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 card">
-            <img src="Potes.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Potes</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
+          </summary>
+          <article class="col-lg-10 col-xs-12 p-4 pl-5">
+              <h3 id="title">Title</h3>
+              <h4 id="resume">Resume</h4>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <h4 id="introduction">Introduction</h4>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <h4 id="objectives">Objectives</h4>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <h4 id="results">Results</h4>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <p> This is a test of text </p>
+              <h4 id="references">Reference</h4>
+          </article>
       </div>
       <footer class="d-flex align-items-center row pt-2 mt-5">
           <div class="col-3">

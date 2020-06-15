@@ -1,0 +1,18 @@
+CREATE TABLE tags (
+    id SERIAL PRIMARY KEY,
+    tag VARCHAR NOT NULL
+);
+
+CREATE TABLE images (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR NOT NULL,
+    tag1_id INTEGER REFERENCES tags,
+    tag2_id INTEGER REFERENCES tags,
+    tag3_id INTEGER REFERENCES tags
+);
+
+CREATE TABLE login (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR NOT NULL,
+    password VARCHAR NOT NULL
+);

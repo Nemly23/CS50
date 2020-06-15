@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block style %}
+{% endblock %}
+
+{% block body %}
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-todos-tab" data-toggle="tab" href="#nav-todos" role="tab" aria-controls="nav-todos" aria-selected="true">Todos</a>
+    <a class="nav-item nav-link" id="nav-barroearte-tab" data-toggle="tab" href="#nav-barroearte" role="tab" aria-controls="nav-barroearte" aria-selected="true">Barro&Arte</a>
+    <a class="nav-item nav-link" id="nav-rodas-tab" data-toggle="tab" href="#nav-rodas" role="tab" aria-controls="nav-rodas" aria-selected="false">Rodas</a>
+    <a class="nav-item nav-link" id="nav-outros-tab" data-toggle="tab" href="#nav-outros" role="tab" aria-controls="nav-outros" aria-selected="false">Outros</a>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-todos" role="tabpanel" aria-labelledby="nav-todos-tab">
+    <div class="row">
+          {% for image in images %}
+            <img src={{ image }} alt="..." class="align-self-start col-lg-3 col-md-4 col-sm-6 col-xs-12 img-thumbnail">
+          {% endfor %}
+    </div>
+  </div>
+  <div class="tab-pane fade" id="nav-barroearte" role="tabpanel" aria-labelledby="nav-barroearte-tab">
+    <div class="row">
+          {% for image in barro %}
+          {% set pos = ['/static/images/', image.name, '.jpg']  %}
+            <img src={{ pos|join('') }} alt="..." class="align-self-start col-lg-3 col-md-4 col-sm-6 col-xs-12 img-thumbnail">
+          {% endfor %}
+    </div>
+  </div>
+  <div class="tab-pane fade" id="nav-rodas" role="tabpanel" aria-labelledby="nav-rodas-tab">
+    <div class="row">
+          {% for image in rodas %}
+          {% set pos = ['/static/images/', image.name, '.jpg']  %}
+          <img src={{ pos|join('') }} alt="..." class="align-self-start col-lg-3 col-md-4 col-sm-6 col-xs-12 img-thumbnail">
+          {% endfor %}
+    </div>
+  </div>
+  <div class="tab-pane fade" id="nav-outros" role="tabpanel" aria-labelledby="nav-outros-tab">
+    <div class="row">
+          {% for image in outros %}
+          {% set pos = ['/static/images/', image.name, '.jpg']  %}
+          <img src={{ pos|join('') }} alt="..." class="align-self-start col-lg-3 col-md-4 col-sm-6 col-xs-12 img-thumbnail">
+          {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

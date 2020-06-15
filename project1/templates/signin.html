@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block style %}
+{% endblock %}
+
+{% block body %}
+  {% if logged %}
+    Welcome {{ user }}
+    <form action="{{ url_for('index') }}" method="post">
+      <button type="checkbox" name="sign" class="btn btn-primary" value = True>Sign out</button>
+    </form>
+  {% else %}
+    {{ user }}
+    <form action="{{ url_for('login') }}" method="post">
+      <div class="form-group">
+        <label for="User">User</label>
+        <input type="text" class="form-control" name="User" id="User" aria-describedby="UserHelp">
+      </div>
+      <div class="form-group">
+        <label for="Password">Password</label>
+        <input type="password" name="Password" class="form-control" id="Password">
+      </div>
+      <button type="Login" class="btn btn-primary">Sign in</button>
+    </form>
+    <a class="card-link" href="{{ url_for('signup') }}">Sign up</a>
+  {% endif %}
+{% endblock %}

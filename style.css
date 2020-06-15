@@ -1,0 +1,50 @@
+.navbar-custom {
+  background-color: #BC5005;
+}
+/* Modify brand and text color */
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: white;
+  font-size: 20px;
+}
+
+.navbar-custom .navbar-text:hover {
+    color: grey;
+}
+
+header {
+  background-image: url("Banner.jpg");
+  background-color: #cccccc;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.row {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+footer {
+  height: 100px;
+  text-align: center;
+  background-color: #ffa64d;
+}
+
+.navbar-header .navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+}
+
+.navbar-toggler-icon:hover {
+  background: #ff0000;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}

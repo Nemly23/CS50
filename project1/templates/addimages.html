@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block style %}
+{% endblock %}
+
+{% block body %}
+  <form action="{{ url_for('addedimages') }}" method="post">
+      <form>
+        {% for file in files %}
+            {% set pos = ['/static/new_images/', file]  %}
+            <fieldset class="form-group">
+              <div class="row">
+                <img src={{ pos|join('') }} alt="..." class="col-form-label col-lg-3 col-md-3 col-sm-6 col-xs-12 img-thumbnail">
+                {% for i in range(1, 4) %}
+                  <div class=" col-lg-3 col-md-3 col-sm-2 col-xs-4">
+                    <label for={{ ['tag', i|string, '_', file]|join('') }}>
+                      {% if i == 1 %}
+                        First tag
+                      {% elif i == 2%}
+                        Second tag
+                      {% else %}
+                        Third tag
+                      {% endif %}
+                    </label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name={{ ['tag', i|string, '_', file]|join('') }} id={{ ['tag', i|string,'_barroearte_', file]|join('') }} value="1" checked>
+                      <label class="form-check-label" for={{ ['tag', i|string,'_barroearte_', file]|join('') }}>
+                        Barro&Arte
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name={{ ['tag', i|string, '_', file]|join('') }} id={{ ['tag', i|string,'_rodas_', file]|join('') }} value="2" checked>
+                      <label class="form-check-label" for={{ ['tag', i|string,'_rodas_', file]|join('') }}>
+                        Rodas
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name={{ ['tag', i|string, '_', file]|join('') }} id={{ ['tag', i|string,'_outros_', file]|join('') }} value="3" checked>
+                      <label class="form-check-label" for={{ ['tag', i|string,'_outros_', file]|join('') }}>
+                        Outros
+                      </label>
+                    </div>
+                    {% if i != 1 %}
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name={{ ['tag', i|string, '_', file]|join('') }} id={{ ['tag', i|string,'_nenhum_', file]|join('') }} value="0" checked>
+                        <label class="form-check-label" for={{ ['tag', i|string,'_nenhum_', file]|join('') }}>
+                          Nenhuma
+                        </label>
+                      </div>
+                    {% endif %}
+                  </div>
+                {% endfor %}
+              </div>
+            </fieldset>
+        {% endfor %}
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+{% endblock %}

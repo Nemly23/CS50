@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block style %}
+{% endblock %}
+
+{% block body %}
+<form action="{{ url_for('sign') }}" method="post" oninput='confPassword.setCustomValidity(confPassword.value != Password.value ? "Passwords do not match." : "")'>
+  <div class="form-group">
+    <label for="User">User</label>
+    <input type="text" class="form-control" name="User" id="User" aria-describedby="UserHelp">
+  </div>
+  <div class="form-group">
+    <label for="Password">Password (min. 8 characters)</label>
+    <input type="password" name="Password" class="form-control" id="Password" pattern=".{8,}">
+  </div>
+  <div class="form-group">
+    <label for="confPassword">Confirm Password</label>
+    <input type="password" name="confPassword" class="form-control" id="confPassword">
+  </div>
+  <button type="submit" class="btn btn-primary">Create account</button>
+</form>
+{% endblock %}
